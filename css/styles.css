@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Happy+Monkey');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'arial black', cursive;
+	cursor: url("../imagens/dedo.png"), auto;
+	   
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#game-play {
+	width: 100%;
+	height: 100%;
+	background: #367;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+#game-start {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../imagens/background-start-page.jpg") center;
+	background-size: cover;
+}
+#vitoria{
+	padding-top: 250px;
+	text-align: center;
+}
+#vitoria img{
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+	border-radius: 20px;
+	border: 10px solid #f2f2f2;
+	background: linear-gradient(to right, yellow, orange);
+}
+.btn_jogo{
+    border-color: rgb(231, 38, 38);
+    padding: 5px 17px; 
+    background: rgb(231, 38, 38);
+    color: #fff;
+    font-size: 1.3em;
+	border-radius: 50%;
+    margin-top: 7px;
+}
+.button-start {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	left: 50%;
+	top: 50%;
+	margin: -10px 0 0 -150px;
+	font-size: 3em;
+	border-radius: 50%;
+	border: 10px solid #f2f2f2;
+	background: linear-gradient(to right, yellow, orange);
+	outline: none;
+}
+
+.fly {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url("../imagens/sprite_mosca.png");
+	animation: animateFly 0.001s infinite, moveFly 15s linear;
+}
+
+#game-info {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+#game-info > span {
+	display: block
+}
+
+#game-info #life i {
+	font-size: 20px;
+	color: red;
+	margin: 0 2px
+}
+
+#game-info #score, #timer {
+	font-size: 1.6em;
+	color: white
+}
+
+@keyframes animateFly {
+	
+	0% {
+		background-position-x: -12px;
+	}
+	
+	33% {
+		background-position-x: -60px;
+	}
+	
+	66% {
+		background-position-x: -110px;
+	}
+	
+	100% {
+		background-position-x: -163px;
+	}
+	
+}
+
+@keyframes moveFly {
+	
+	0% {
+		top: 100%;
+	}
+	
+	100% {
+		top: -100px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
